@@ -1,0 +1,7 @@
+package com.oracle.test;
+
+public class ReturnType2 extends ReturnType1 {
+
+	
+
+}

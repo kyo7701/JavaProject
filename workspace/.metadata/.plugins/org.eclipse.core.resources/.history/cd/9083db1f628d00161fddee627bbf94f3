@@ -1,0 +1,8 @@
+package com.oracle.test2;
+
+import com.oracle.helloworld.tools;
+
+public class Test1 {
+	tools t = new tools();
+	t.a = 10;
+}

@@ -1,0 +1,17 @@
+package com.oracle.helloworld;
+
+public class oldSix extends Person {
+	public oldSix() {
+		// TODO Auto-generated constructor stub
+		this.weapon = new PigShit();
+		this.setName("猪老六");
+		this.setHP(180);
+		this.speed = 6;
+		this.strength = 99;
+	} 
+	
+	public void attackMethod(Person anotherPerson){
+		
+	}
+	
+}

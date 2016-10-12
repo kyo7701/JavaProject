@@ -1,0 +1,11 @@
+package com.k99.collection;
+
+public class Node {
+  Object value; //数据域
+  Node next;    //指向域
+  
+  public Node(Object x) {
+	  this.value = x;
+	  this.next = null;
+  }
+}

@@ -1,0 +1,11 @@
+package com.k99.test;
+
+public class Graphical {
+	public double area(){
+		return 0.0;
+	}
+	
+	public double Perimeter(){
+		return 0.0;
+	}
+}

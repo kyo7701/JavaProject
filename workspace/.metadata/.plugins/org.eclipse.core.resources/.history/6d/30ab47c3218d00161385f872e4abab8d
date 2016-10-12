@@ -1,0 +1,7 @@
+package com.oracle.shape;
+
+public class Graph {
+	public int calculateArea(){
+		
+	}
+}

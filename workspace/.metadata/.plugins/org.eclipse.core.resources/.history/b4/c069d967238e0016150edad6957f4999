@@ -1,0 +1,43 @@
+package com.oracle.day10;
+
+import com.oracle.test.Parameter2;
+import com.oracle.test.ReturnType1;
+
+public class Student extends Person {
+	public voi Student(){
+		return 0;
+	}
+	
+	/*
+	@Override
+	public ReturnType3 eat() {
+		// TODO Auto-generated method stub
+		super.eat();
+		System.out.println("≥‘Õ¡");
+		return null;
+	}
+	*/
+	/*
+	@Override
+	public ReturnType2 eat() {
+		// TODO Auto-generated method stub
+		super.eat();
+		System.out.println("≥‘Õ¡");
+		return null;
+	}
+	*/
+	
+	public ReturnType1 eat() {
+		// TODO Auto-generated method stub
+		super.eat();
+		System.out.println("≥‘Õ¡");
+		return null;
+	}
+	
+	@Override
+	public void sleep(Parameter2 p1) {
+		// TODO Auto-generated method stub
+		super.sleep(p1);
+	}
+	
+}

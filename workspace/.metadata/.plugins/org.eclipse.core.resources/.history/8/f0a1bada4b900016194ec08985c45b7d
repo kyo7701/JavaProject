@@ -1,0 +1,6 @@
+package com.k99.collection;
+
+public class Node {
+  Object value;
+  Node next;
+}

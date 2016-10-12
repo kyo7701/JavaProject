@@ -1,0 +1,6 @@
+package com.oracle.helloworld;
+
+public class Shield {
+	int dedendPower;
+	String name;
+}

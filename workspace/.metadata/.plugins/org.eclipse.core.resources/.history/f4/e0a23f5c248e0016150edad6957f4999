@@ -1,0 +1,11 @@
+package com.oracle.test;
+
+public class Parameter1 {
+	public void parseInt() {
+		
+	}
+	
+	public static parseString() {
+		
+	}
+}

@@ -1,0 +1,17 @@
+package com.oracle.day10;
+
+import java.util.Scanner;
+
+public class Test {
+	
+	public static void main(String []args) {
+		Student s = new Student();
+		final Person a1 = new Person();
+		a1.name = "lala";
+		a1.name = "lala";
+		Person.nothing();
+		Scanner sc = new Scanner(System.in);
+		String str = sc.next();
+		System.out.println(str);
+	}
+}

@@ -1,0 +1,15 @@
+package com.oracle.shape;
+
+public class Square extends Graph {
+	private int a;
+	
+	@Override
+	public double calculateArea(){
+		return Math.pow(a, 2);
+	}
+	
+	@Override
+	public double calculatePerimeter(){
+		return a * 4.0;
+	}
+}

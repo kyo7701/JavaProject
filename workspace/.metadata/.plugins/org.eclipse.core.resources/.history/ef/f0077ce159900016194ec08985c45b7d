@@ -1,0 +1,17 @@
+package com.k99.collection;
+
+
+public class TestArrayList {
+	public static void main(String []args) {
+		LinkedList link = new LinkedList();
+		link.AddElement(15);
+		link.AddElement(17);
+		link.AddElement(19);
+		link.AddElement(15);
+		System.out.println(link.lastNode().value);
+		System.out.println(link.searchElementAtPosition(2).value);
+		System.out.println(link.rePlaceElement(5, 3));
+		//link.search(17);
+		link.traverseLinkList();
+	}
+}

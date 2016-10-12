@@ -1,0 +1,124 @@
+package com.k99.collection;
+
+public class LinkedList {
+	private Node head;
+	private int size = 1;
+	
+	public int getSize() {
+		return size - 1;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	public LinkedList() {
+		//初始化头结点
+		this.head = new Node(0);
+	}
+	
+	public void AddElement(int element) {
+		this.lastInsert(element);
+		this.size += 1;
+	}
+	 
+
+	public void headInsert(int element) {
+		
+	}
+	
+	public void midInsert(int pos,int element) {
+		int count = 0;
+		Node tmp = this.head.next;
+		if (pos > this.size){
+			return;
+		}
+		while(tmp.next != null) {
+			if(count == pos) {//插入
+				Node newNode = this.CreateElement(element);
+				newNode.next = tmp.next;
+				tmp.next = newNode;
+				break;
+			}
+		}
+	}
+	
+	public void lastInsert(int element) {
+		Node tmp = this.lastNode();
+		Node newElement = new Node(element);
+		tmp.next = newElement;
+	}
+
+	//返回在链表中的位置,如果没有该元素则返回-1
+	public Node search(int element) {
+		Node tmp = this.head;
+		int count = 0;
+		while(tmp.next != null) {
+			if(tmp.value == element)return tmp;
+			tmp = tmp.next;
+			count++;
+		}
+		return null;
+	}
+	
+	public Node searchElementAtPosition(int pos) {
+		Node tmp = this.head.next;
+		int count = 0;
+		while(tmp.next != null) {
+			if(count == pos)return tmp;
+			tmp = tmp.next;
+			count++;
+		}
+		return null;
+	}
+	
+	public void rePlaceElement(int element,int index) {
+		Node node = this.searchElementAtPosition(index);
+		System.out.println("替换前:"+node.value);
+		node.value = element;
+		System.out.println("替换后:"+node.value);
+	}
+	
+	public int delElement(int pos) {
+		if (pos > this.getSize())return -1;
+		
+		
+		return 0;
+	}
+	
+	public Node lastNode() {
+		Node tmp = this.head;
+		while(tmp.next != null) {
+			tmp = tmp.next;
+		}
+		return tmp;
+	}
+	
+	public Node traverseLinkList(int pos) {
+		Node tmp = this.head.next;
+		int count = 0;
+		while(tmp != null) {
+			if(pos == count)return tmp;
+			count++;
+			tmp = tmp.next;
+		}
+		return null;
+	}
+	
+	public void traverseLinkList() {
+		Node tmp = this.head.next;
+		int count = 1;
+		while(tmp != null) {
+			System.out.println("链表中第"+ count+ "个元素:" + tmp.value);
+			count++;
+			tmp = tmp.next;
+		}
+	}
+	
+	public Node CreateElement(int value) {
+		Node ele = new Node(value);
+		ele.next = null;
+		return ele;
+	}
+	
+}

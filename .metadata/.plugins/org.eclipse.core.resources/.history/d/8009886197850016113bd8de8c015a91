@@ -1,0 +1,47 @@
+package com.oracle.helloworld;
+
+import java.util.Arrays;
+
+public class HelloWorld {
+	public void greet() {
+		
+		
+	}
+	public static void main(String []args) {
+		System.out.println("**************大战开始*****************");
+		oldSix six = new oldSix();
+		WangLaoEr er = new WangLaoEr();
+		NY ny = new NY();
+		while(true) {
+			
+			int SixHP = six.getHP();
+			if(SixHP <= 0){
+				System.out.println("猪老六真菜,被王老二干死了");
+				break;
+			}
+			six.attack(er);
+			int erHP = er.getHP();
+			if(erHP <= 0){
+				System.out.println("王老二真菜,被猪老六干死了");
+				break;
+			}
+			er.attack(six);
+			int randomAction = (int)(Math.random() * 10);
+			int randomPeople = (int)(Math.random() * 2);
+			if(randomAction == 2){
+				if(randomPeople == 0) {
+					ny.milk(six);
+				}else {
+					ny.milk(er);
+				}
+			} else if(randomAction == 3) {
+				if(randomPeople == 0) {
+					ny.smile(six);
+				}else {
+					ny.smile(er);
+				}
+			}
+		}
+		System.out.println("**************大战结束*****************");
+	}
+}

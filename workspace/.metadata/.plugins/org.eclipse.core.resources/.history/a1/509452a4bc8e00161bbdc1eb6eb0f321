@@ -1,0 +1,19 @@
+package com.k99.test;
+
+public class Rectangle extends Graphical {
+	private int a;
+	
+	public int getA() {
+		return a;
+	}
+	public void setA(int a) {
+		this.a = a;
+	}
+	
+	public double computeArea() {
+		return 0.0;
+	}
+	public double computePerimeter() {
+		return 0.0;
+	}
+}

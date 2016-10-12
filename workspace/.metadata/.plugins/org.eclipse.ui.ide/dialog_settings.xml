@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="E:\甲骨文培训资料\第11天：面向对象（5）\第11天：面向对象（5）\Test161010"/>
+			<item value="E:\甲骨文培训资料\第10天：面向对象（4）(1)\Test161009"/>
+			<item value="E:\甲骨文培训资料\第10天：面向对象（4）\第10天：面向对象（4）\Test161009"/>
+			<item value="E:\甲骨文培训资料\第9天：面向对象（3）\第9天：面向对象（3）\Test161008"/>
+			<item value="D:\JavaP\HelloWorld"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

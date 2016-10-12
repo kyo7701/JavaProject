@@ -1,0 +1,13 @@
+package com.oracle.day10;
+
+import com.oracle.test.ReturnType1;
+
+public class Student extends Person {
+	@Override
+	public ReturnType1 eat() {
+		// TODO Auto-generated method stub
+		super.eat();
+		System.out.println("≥‘Õ¡");
+	}
+	
+}

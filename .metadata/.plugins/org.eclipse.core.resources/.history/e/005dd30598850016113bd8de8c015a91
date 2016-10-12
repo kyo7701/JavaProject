@@ -1,0 +1,7 @@
+package com.oracle.helloworld;
+
+public class SteelShield extends Shield{
+	public SteelShield() {
+		
+	}
+}

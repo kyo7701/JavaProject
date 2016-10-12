@@ -1,0 +1,8 @@
+package com.oracle.shape;
+
+public class Circle extends Graph{
+	@Override 
+	public int calculateArea(){
+		
+	}
+}

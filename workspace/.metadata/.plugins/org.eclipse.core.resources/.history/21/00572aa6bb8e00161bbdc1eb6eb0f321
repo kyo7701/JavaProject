@@ -1,0 +1,7 @@
+package com.k99.test;
+
+abstract public class Graphical {
+	double area;
+	double Perimeter;
+	abstract public double computeArea();
+}

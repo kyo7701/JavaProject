@@ -1,0 +1,6 @@
+package com.oracle.helloworld;
+
+public class tools {
+	int number;
+	public int a;
+}

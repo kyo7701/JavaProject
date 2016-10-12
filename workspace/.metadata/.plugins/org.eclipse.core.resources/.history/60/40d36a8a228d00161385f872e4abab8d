@@ -1,0 +1,11 @@
+package com.oracle.shape;
+
+public class Graph {
+	public int calculateArea(){
+		return 0;
+	}
+	
+	public int calculatePerimeter(){
+		return 0;
+	}
+}

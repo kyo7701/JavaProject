@@ -1,0 +1,8 @@
+package com.oracle.test;
+
+public enum Season {
+	Spring,
+	Summer,
+	Autumn,
+	Winter;
+}

@@ -1,0 +1,26 @@
+package com.k99.collection;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class TestArrayList {
+	public static void main(String []args) {
+		ArrayList list = new ArrayList(9);
+		Student p1 = new Student();
+		Student p2 = new Student();
+		Student p3 = new Student();
+		list.add(p1);
+		list.add(p2);
+		list.add(p3);
+
+		for(Object element :list) {
+			if(element instanceof Student) {
+				Student s1 = (Student)element;
+				System.out.println(s1);
+			}
+		}
+		ListIterator<Object> iterator = list.listIterator();
+		
+		System.out.println();
+	}
+}

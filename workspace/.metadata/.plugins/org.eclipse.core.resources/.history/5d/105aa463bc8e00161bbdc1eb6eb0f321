@@ -1,0 +1,21 @@
+package com.k99.test;
+
+public class Circle extends Graphical {
+	private int radius;
+	
+	public int getRadius() {
+		return radius;
+	}
+
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+
+	public double computeArea() {
+		return 0.0;
+	}
+	
+	public double computePerimeter(){
+		return 0.0;
+	}
+}

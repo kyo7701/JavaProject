@@ -1,0 +1,83 @@
+package com.oracle.helloworld;
+
+public class Person {
+	private String name;
+	public Weapon weapon;
+	private int HP;
+	public Shield shield;
+	public int getStrength() {
+		return strength;
+	}
+
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+
+	public int strength;
+	public int speed;
+	
+	public void attack(Person anotherOne) {
+		if (anotherOne == this){
+			System.out.println("不能攻击自己");
+			return;
+		}
+		System.out.println(this.name + "使用" + this.getWeapon().getName() + "攻击了" + anotherOne.getName());
+		anotherOne.beingAttacked(this.weapon);
+	}
+	
+	public Weapon getWeapon() {
+		return weapon;
+	}
+
+	public  int getHP() {
+		return HP;
+	}
+
+	public void setHP(int hP) {
+		int value = hP - HP;
+		if(hP < HP) {
+			System.out.println(this.getName() + "HP " + value);
+			System.out.println(this.getName() + "当前HP " + (this.getHP()+value));
+		}
+		HP = hP;
+		
+	}
+
+	public void setWeapon(Weapon weapon) {
+		this.weapon = weapon;
+	}
+
+	public void beingAttacked(Weapon weapon) {
+		int power = weapon.getAttackPower();
+		int CurrentHP = this.getHP() - power;
+		System.out.println(this.name + "正在遭受" + weapon.getName()+ "的攻击");
+		this.setHP(CurrentHP);
+	}
+	
+	public void beingAttacked(int power) {
+		int CurrentHP = this.getHP() - power;
+		System.out.println(this.name + "正在遭受攻击");
+		this.setHP(CurrentHP);
+	}
+	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void attackSkill(Person anotherPerson) {
+		
+	}
+}

@@ -1,0 +1,10 @@
+package com.oracle.test2;
+
+import com.oracle.helloworld.tools;
+
+public class Test1 {
+	public static void main(String []args){
+		tools t1 = new tools();
+		t1.age = 10;
+	}
+}

@@ -1,0 +1,11 @@
+package com.oracle.day10;
+
+public class Test {
+	final Person a1 = new Person();
+	public static void main(String []args) {
+		Student s = new Student();
+		a1.name = "lala";
+		
+		
+	}
+}

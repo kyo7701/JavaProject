@@ -1,0 +1,14 @@
+package com.oracle.shape;
+
+public class Circle extends Graph{
+	double radius;
+	@Override 
+	public double calculateArea(){
+		return Math.PI * Math.pow(radius, 2);
+	}
+	@Override
+	public double calculatePerimeter(){
+		double result = radius * 2 * Math.PI;
+		return result;
+	}
+}

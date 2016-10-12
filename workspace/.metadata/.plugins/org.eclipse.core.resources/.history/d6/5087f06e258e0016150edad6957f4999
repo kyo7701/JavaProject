@@ -1,0 +1,19 @@
+package com.oracle.test;
+
+public class Parameter1 {
+	public void parseInt() {
+		System.out.println("lll");
+	}
+	
+	public static void parseString() {
+		System.out.println("lllaaa");
+	}
+	
+	protected void bark() {
+		System.out.println("bark");
+	}
+	
+	protected static void bark1() {
+		System.out.println("bark1");
+	}
+}

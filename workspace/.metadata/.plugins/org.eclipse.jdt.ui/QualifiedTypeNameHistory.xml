@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.oracle.shape.Circle"/>
+<fullyQualifiedTypeName name="com.oracle.shape.Square"/>
+<fullyQualifiedTypeName name="javax.security.auth.Subject"/>
+<fullyQualifiedTypeName name="com.oracle.test.ReturnType2"/>
+<fullyQualifiedTypeName name="com.oracle.test.ReturnType1"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.oracle.day10.Student"/>
+<fullyQualifiedTypeName name="com.oracle.test.Parameter2"/>
+<fullyQualifiedTypeName name="com.oracle.test.Parameter1"/>
+<fullyQualifiedTypeName name="com.oracle.day10.TestInterface"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="com.k99.test.Graphical"/>
+<fullyQualifiedTypeName name="com.k99.test.Rectangle"/>
+<fullyQualifiedTypeName name="com.oracle.day10.InputBase"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.oracle.day10.InputImp"/>
+<fullyQualifiedTypeName name="java.util.ListIterator"/>
+<fullyQualifiedTypeName name="java.lang.Throwable"/>
+<fullyQualifiedTypeName name="java.lang.IllegalMonitorStateException"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="com.k99.collection.LinkedList"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
+</qualifiedTypeNameHistroy>
