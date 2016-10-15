@@ -16,4 +16,6 @@
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="com.oracle.helloworld.Skill"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.k99.collection.BinarySortedTree"/>
+<fullyQualifiedTypeName name="com.k99.collection.TreeNode"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,39 @@
+package com.k99.collection2;
+
+import com.k99.collection.LinkedList;
+
+public class MyStack extends Collection {
+	private LinkedList list;
+	
+	public MyStack() {
+		this.size = 0;
+		this.list = new LinkedList();
+	}
+	
+	@Override 
+	public int peek() {
+		// TODO Auto-generated method stub
+		return this.list.searchElementAtPosition(0).getValue();
+	}
+	
+	@Override
+	public int pop() {
+		int value = this.list.delElement(0);
+		this.size--;
+		// TODO Auto-generated method stub
+		return value;
+	}
+
+	@Override
+	public void push(int value) {
+		// TODO Auto-generated method stub
+		this.list.headInsert(value);
+	}
+	
+	public void traverse() {
+		this.list.traverseLinkList();
+	}
+	
+    
+	
+}

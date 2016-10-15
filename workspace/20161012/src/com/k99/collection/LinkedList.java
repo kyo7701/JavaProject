@@ -5,7 +5,7 @@ public class LinkedList {
 	private int size = 1;
 
 	public int getSize() {
-		return size - 1;
+		return size;
 	}
 
 	public void setSize(int size) {
@@ -45,8 +45,6 @@ public class LinkedList {
 	 */
 
 	public void midInsert(int pos, int element) {
-		int count = 0;
-
 		if (pos > this.size) {
 			return;
 		}
@@ -74,12 +72,10 @@ public class LinkedList {
 	 */
 	public Node search(int element) {
 		Node tmp = this.head;
-		int count = 0;
 		while (tmp.next != null) {
-			if (tmp.value == element)
-				return tmp;
+			if (tmp.value == element)return tmp;
+				
 			tmp = tmp.next;
-			count++;
 		}
 		return null;
 	}
@@ -92,8 +88,8 @@ public class LinkedList {
 	 */
 	
 	public Node searchElementAtPosition(int pos) {
-		Node tmp = this.head.next;
-		int count = 0;
+		Node tmp = this.head;
+		int count = -1;
 		while (tmp != null) {
 			if (count == pos)
 				return tmp;
@@ -122,38 +118,28 @@ public class LinkedList {
 	}
 
 	public int delElement(int pos) {
-		if (pos > this.getSize())
-			return -1;
-
-		Node node = this.searchElementAtPosition(pos - 1);
+		if (pos > this.getSize()-1 ||pos < 0) {
+			throw new IllegalAccessError("删除元素越界");
+			//return -1;
+		}
+		
+		Node node = (pos == 0)?this.head:this.searchElementAtPosition(pos - 1);
 		Node delElement = node.next;
 		node.next = delElement.next;
-
+		this.size -= 1;
 		return delElement.value;
 	}
 
 	public Node lastNode() {
 		Node tmp = this.head;
-		while (tmp.next != null) {
+		while(tmp.next != null) {
 			tmp = tmp.next;
 		}
 		return tmp;
 	}
-
-	public Node traverseLinkList(int pos) {
-		Node tmp = this.head.next;
-		int count = 0;
-		while (tmp != null) {
-			if (pos == count)
-				return tmp;
-			count++;
-			tmp = tmp.next;
-		}
-		return null;
-	}
 	
 	/*
-	 * 
+	 *遍历链表中的节点 
 	 */
 	public void traverseLinkList() {
 		Node tmp = this.head.next;
@@ -164,7 +150,10 @@ public class LinkedList {
 			tmp = tmp.next;
 		}
 	}
-
+	
+	/*
+	 * 封装节点元素
+	 */
 	public Node CreateElement(int value) {
 		Node ele = new Node(value);
 		ele.next = null;

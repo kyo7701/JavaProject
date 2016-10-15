@@ -1,0 +1,38 @@
+package com.k99.collection2;
+
+import java.util.ArrayList;
+
+public class MyQueue extends Collection {
+	
+	public ArrayList list;
+	
+	public MyQueue(int size) {
+		this.size = size;
+		this.list = new ArrayList(size);
+	}
+	
+	public MyQueue() {
+		this.size = 10;
+		this.list = new ArrayList();
+	}
+	
+	
+	@Override
+	public int pop() {
+		// TODO Auto-generated method stub
+		Integer i = (Integer)this.list.remove(this.size - 1);
+		return i.intValue();
+	}
+
+	@Override
+	public void push(int value) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public int peek() {
+		return 0;
+	}
+
+}
